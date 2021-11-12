@@ -6,6 +6,7 @@ class SessionsController < ApplicationController
     def create
         #if not logged in OR name is not valid
         #if name exists AND not an active session
+
         if !session.empty?
             redirect_to '/'
         else
